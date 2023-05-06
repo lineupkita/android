@@ -42,7 +42,7 @@ object BuildType {
         const val resBaseUrl = "newsapi.org"
 
         const val appNameKey = "app_name"
-        const val appName = "Replantation"
+        const val appName = "Lineupkita App"
     }
 
 }

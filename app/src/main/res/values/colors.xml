@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="purple_700">#FF3700B3</color>
+    <color name="purple_700">#222935</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
@@ -11,7 +11,7 @@
     <color name="green">#163E3A</color>
     <color name="mine_shaft">#333333</color>
     <color name="purple_200">#FFBB86FC</color>
-    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_500">#8A69CE</color>
     <color name="mariner">#2874D2</color>
     <color name="cobalt">#034CA5</color>
     <color name="anakiwa">#E3E5F8</color>
@@ -25,5 +25,7 @@
     <color name="jungle_green">#2CAA7E</color>
     <color name="persimmon">#FF5B5B</color>
     <color name="cornflower_blue"> #C7E1FF</color>
+    <color name="oxford_blue">#384252</color>
+    <color name="royal_bluew">#6252EA</color>
 
 </resources>

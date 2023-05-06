@@ -42,5 +42,6 @@
     <string name="choose_name_worker">Pilih nama pekerja</string>
     <string name="kode_plot_hint">Kode plot</string>
     <string name="pola_tanam_hint">Pola tanam</string>
+    <string name="welcome_login_app">Welcome</string>
 
 </resources>
