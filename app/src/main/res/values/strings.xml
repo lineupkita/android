@@ -55,5 +55,7 @@
     <string name="search_festival_hint">Cari festival</string>
     <string name="festival_foryou">Festival untukmu</string>
     <string name="date_festival">28 - 30 Aagustus 2023</string>
+    <string name="nav_ticket">Tiket</string>
+    <string name="nav_chat">Cari partner</string>
 
 </resources>

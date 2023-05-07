@@ -401,6 +401,8 @@
                 android:backgroundTint="@color/purple_500"
                 android:insetBottom="@dimen/zero_margin"
                 android:text="@string/register"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="@dimen/screen_margin"
                 android:textAppearance="@style/TextAppearance.Poppins.Medium.Body2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

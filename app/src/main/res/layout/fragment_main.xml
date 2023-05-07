@@ -19,6 +19,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
+        android:backgroundTint="@color/oxford_blue"
         app:fabCradleMargin="10dp"
         app:fabCradleRoundedCornerRadius="10dp"
         app:fabCradleVerticalOffset="10dp"
@@ -28,6 +29,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:menu="@menu/menu_bottom_nav"
+            app:itemTextColor="@color/white"
+            app:itemIconTint="@color/white"
             app:itemTextAppearanceActive="@style/TextAppearance.OpenSans.SemiBold.Caption"
             app:itemTextAppearanceInactive="@style/TextAppearance.OpenSans.SemiBold.Caption"
             app:labelVisibilityMode="labeled"/>

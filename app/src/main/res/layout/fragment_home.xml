@@ -92,7 +92,7 @@
         android:id="@+id/rvFilter"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/screen_margin"
         android:layout_marginStart="@dimen/screen_margin"
         android:clipToPadding="false"
         android:orientation="horizontal"
@@ -110,7 +110,7 @@
         android:text="@string/festival_foryou"
         android:textAppearance="@style/TextAppearance.OpenSans.SemiBold.Headline6"
         android:layout_marginStart="@dimen/screen_margin"
-        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginTop="@dimen/screen_margin"
         android:textColor="@color/white"/>
 
     <com.google.android.material.textview.MaterialTextView
@@ -130,8 +130,7 @@
         android:id="@+id/rvFestival"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/normal_margin"
-        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/screen_margin"
         android:clipToPadding="false"
         android:orientation="horizontal"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
