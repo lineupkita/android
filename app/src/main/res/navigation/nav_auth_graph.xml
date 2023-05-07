@@ -34,14 +34,29 @@
 
     <fragment
         android:id="@+id/login_fragment"
-        android:name="com.lineupkita.app.ui.login.LoginFragment"
+        android:name="com.lineupkita.app.ui.auth.LoginFragment"
         tools:layout="@layout/fragment_login">
 
         <action
             android:id="@+id/actionMainFragment"
             app:destination="@id/main_fragment"/>
+        <action
+            android:id="@+id/action_login_fragment_to_register_fragment"
+            app:destination="@id/register_fragment" />
 
     </fragment>
+
+    <fragment
+        android:id="@+id/register_fragment"
+        android:name="com.lineupkita.app.ui.auth.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+
+
+        <action
+            android:id="@+id/action_register_fragment_to_main_fragment"
+            app:destination="@id/main_fragment" />
+    </fragment>
+
 
 
 </navigation>

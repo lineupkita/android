@@ -43,5 +43,17 @@
     <string name="kode_plot_hint">Kode plot</string>
     <string name="pola_tanam_hint">Pola tanam</string>
     <string name="welcome_login_app">Welcome</string>
+    <string name="firtsname">Nama awal</string>
+    <string name="lastname">Nama akhir</string>
+    <string name="login_firstname_hint">Masukan nama awal</string>
+    <string name="login_lastname_hint">"Masukan nama akhir "</string>
+    <string name="email">Email</string>
+    <string name="email_hint">Masukan email</string>
+    <string name="password_confirm">Konfirmasi password</string>
+    <string name="confirm_password_hint">Masukan konfirmasi password</string>
+    <string name="register">Daftar</string>
+    <string name="search_festival_hint">Cari festival</string>
+    <string name="festival_foryou">Festival untukmu</string>
+    <string name="date_festival">28 - 30 Aagustus 2023</string>
 
 </resources>
