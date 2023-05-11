@@ -105,12 +105,17 @@ class HomeFragment : Fragment(R.layout.fragment_home) {
 
     private fun initOnClick() {
         binding.apply {
-
+            tvSeeAll.setOnClickListener(onClickCallback)
         }
     }
 
     private val onClickCallback = View.OnClickListener { view ->
         when (view) {
+            binding.tvSeeAll -> {
+                navController.navigateOrNull(
+                    HomeFragmentDirections.actionHomeFragmentToDetailsFestivalFragment()
+                )
+            }
         }
 
     }

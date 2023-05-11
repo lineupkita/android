@@ -3,8 +3,11 @@ package com.lineupkita.app.ui.home.adapter
 import android.widget.ImageView
 import com.lineupkita.app.data.remote.dummy.FestivalModel
 import com.lineupkita.app.data.remote.dummy.Filter
+import com.lineupkita.app.data.remote.dummy.LineupModel
 import com.lineupkita.app.databinding.ItemFestivalBinding
+import com.lineupkita.app.databinding.ItemFestivalWhilistBinding
 import com.lineupkita.app.databinding.ItemFilterBinding
+import com.lineupkita.app.databinding.ItemLineupBinding
 import com.lineupkita.app.util.ImageCornerOptions
 import com.lineupkita.app.util.loadImage
 import com.lineupkita.app.util.textOrNull
@@ -52,5 +55,50 @@ object HomeAdapter {
             )
         )
 
+    val lineupAdapter =
+        BaseAdapter.adapterOf<LineupModel, ItemLineupBinding>(
+            register = BaseAdapter.Register(
+                onBindHolder = { _, item, view ->
+                    view.run {
+                        tvTittle.textOrNull = item.title
+                        tvCountry.textOrNull = item.country
+                        ivImage.loadImage(
+                            source = item.image,
+                            scaleType = ImageView.ScaleType.CENTER_CROP,
+                            radius = 8,
+                            corner = ImageCornerOptions.ROUNDED
+                        )
+
+                    }
+                }
+            ),
+            diff = BaseAdapter.Diff(
+                areItemsTheSame = { old, new -> old.id == new.id },
+                areContentsTheSame = { old, new -> old == new }
+            )
+        )
+
+    val whislistAdapter =
+        BaseAdapter.adapterOf<FestivalModel, ItemFestivalWhilistBinding>(
+            register = BaseAdapter.Register(
+                onBindHolder = { _, item, view ->
+                    view.run {
+                        tvDate.textOrNull = item.date
+                        tvTitlenameFestival.textOrNull = item.title
+                        ivFestival.loadImage(
+                            source = item.image,
+                            scaleType = ImageView.ScaleType.CENTER_CROP,
+                            radius = 8,
+                            corner = ImageCornerOptions.ROUNDED
+                        )
+
+                    }
+                }
+            ),
+            diff = BaseAdapter.Diff(
+                areItemsTheSame = { old, new -> old.id == new.id },
+                areContentsTheSame = { old, new -> old == new }
+            )
+        )
 
 }

@@ -16,7 +16,7 @@ class SplashScreenFragment: Fragment(R.layout.fragment_splashscreen) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        forceFullscreenStatusBar()
+//        forceFullscreenStatusBar()
 
     }
 

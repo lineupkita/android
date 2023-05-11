@@ -57,5 +57,10 @@
     <string name="date_festival">28 - 30 Aagustus 2023</string>
     <string name="nav_ticket">Tiket</string>
     <string name="nav_chat">Cari partner</string>
+    <string name="description">Deskripsi</string>
+    <string name="lineup">Lineup</string>
+    <string name="profile">Profile</string>
+    <string name="whislist">Whislist konser</string>
+    <string name="artist_fav">Artis Favorit</string>
 
 </resources>

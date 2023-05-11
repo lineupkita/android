@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clToolbars"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/screen_margin"
+            android:layout_marginBottom="@dimen/screen_margin"
+            android:drawableLeft="@drawable/ic_baseline_arrow"
+            android:drawablePadding="@dimen/screen_margin"
+            android:layout_marginStart="@dimen/screen_margin"
+            android:text="@string/profile"
+            android:textColor="@color/white"
+            android:textAppearance="@style/TextAppearance.OpenSans.Bold.Headline6"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/ivImage"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/zero_margin"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:src="@drawable/round_account_circle"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clToolbars" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvTittle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:text="LANY"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/ivImage"
+        app:layout_constraintTop_toTopOf="@id/ivImage" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginBottom="@dimen/normal_margin"
+        android:text="America"
+        android:textColor="@color/dove_gray"
+        app:layout_constraintBottom_toBottomOf="@+id/ivImage"
+        app:layout_constraintStart_toEndOf="@id/ivImage" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivImage"
+        android:background="@color/purple_500"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginEnd="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:layout_marginBottom="@dimen/normal_margin" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:drawablePadding="@dimen/normal_margin"
+        android:drawableStart="@drawable/baseline_settings"
+        android:textAppearance="@style/TextAppearance.OpenSans.Bold.Body1"
+        android:text="Setting"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvArtistFav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:drawablePadding="@dimen/normal_margin"
+        android:drawableStart="@drawable/baseline_favorite"
+        android:textAppearance="@style/TextAppearance.OpenSans.Bold.Body1"
+        android:text="Artis Favorit"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSetting" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvKonserWhislist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:drawablePadding="@dimen/normal_margin"
+        android:drawableStart="@drawable/baseline_queue_music"
+        android:textAppearance="@style/TextAppearance.OpenSans.Bold.Body1"
+        android:text="Konser Whislist"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvArtistFav" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/tvLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_margin"
+        android:layout_marginTop="@dimen/large_margin"
+        android:drawablePadding="@dimen/normal_margin"
+        android:drawableStart="@drawable/baseline_logout"
+        android:textAppearance="@style/TextAppearance.OpenSans.Bold.Body1"
+        android:text="Logout"
+        android:textColor="@color/persimmon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvKonserWhislist" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

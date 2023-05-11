@@ -11,6 +11,18 @@
         android:label="@string/nav_home"
         tools:layout="@layout/fragment_home" >
 
+        <action
+            android:id="@+id/action_home_fragment_to_details_festival_fragment"
+            app:destination="@id/details_festival_fragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/details_festival_fragment"
+        android:name="com.lineupkita.app.ui.detail.DetailfestivalFragment"
+        android:label="@string/nav_home"
+        tools:layout="@layout/fragment_detail_festival" >
+
+    </fragment>
+
 
 </navigation>

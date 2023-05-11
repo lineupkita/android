@@ -22,6 +22,7 @@ class MainFragment : Fragment(R.layout.fragment_main) {
     private var bottomNavSelectedItemId = R.id.home
     private val resNavigationId = mutableListOf(
         R.id.home,
+        R.id.profile
         )
 
     private val binding by viewBinding<FragmentMainBinding>()
@@ -49,7 +50,8 @@ class MainFragment : Fragment(R.layout.fragment_main) {
 
         // Todo : Change graph when declared graph not used
         val navGraphIds = listOf(
-            R.navigation.nav_home_graph
+            R.navigation.nav_home_graph,
+            R.navigation.nav_profile_graph
         )
 
 
